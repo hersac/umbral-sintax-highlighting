@@ -1,0 +1,26 @@
+{
+  "name": "um",
+  "displayName": "umbral",
+  "description": "umbral",
+  "version": "0.0.2",
+  "publisher": "umbral",
+  "engines": {
+    "vscode": "^1.106.1"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "umbral",
+      "aliases": ["Umbral", "umbral"],
+      "extensions": [".um"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "umbral",
+      "scopeName": "source.umbral",
+      "path": "./syntaxes/umbral.tmLanguage.json"
+    }]
+  }
+}
