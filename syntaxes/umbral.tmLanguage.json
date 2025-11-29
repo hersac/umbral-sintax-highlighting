@@ -98,7 +98,7 @@
           "name": "keyword.control.umbral"
         },
         {
-          "match": "\\b(v|c|f|cs|pr|pu):",
+          "match": "\\b(v|c|f|fe|cs|pr|pu):",
           "name": "keyword.declaration.umbral"
         }
       ]
