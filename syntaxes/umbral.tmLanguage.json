@@ -35,22 +35,8 @@
               "name": "constant.character.escape.umbral"
             },
             {
-              "match": "&[a-zA-Z_][a-zA-Z0-9_]*(\\.[a-zA-Z_][a-zA-Z0-9_]*)*(\\[[^\\]]*\\])?(\\([^\\)]*\\))?",
-              "name": "constant.character.escape.umbral",
-              "captures": {
-                "1": {
-                  "patterns": [
-                    {
-                      "match": "[\\[\\]]",
-                      "name": "punctuation.definition.array.interpolation.umbral"
-                    },
-                    {
-                      "match": "[\\(\\)]",
-                      "name": "punctuation.definition.function.interpolation.umbral"
-                    }
-                  ]
-                }
-              }
+              "match": "&[a-zA-Z_][a-zA-Z0-9_]*((\\.[a-zA-Z_][a-zA-Z0-9_]*)|(\\([^\\)]*\\))|(\\[[^\\]]*\\]))*",
+              "name": "constant.character.escape.umbral"
             }
           ]
         },
@@ -69,22 +55,8 @@
               "name": "constant.character.escape.umbral"
             },
             {
-              "match": "&[a-zA-Z_][a-zA-Z0-9_]*(\\.[a-zA-Z_][a-zA-Z0-9_]*)*(\\[[^\\]]*\\])?(\\([^\\)]*\\))?",
-              "name": "constant.character.escape.umbral",
-              "captures": {
-                "1": {
-                  "patterns": [
-                    {
-                      "match": "[\\[\\]]",
-                      "name": "punctuation.definition.array.interpolation.umbral"
-                    },
-                    {
-                      "match": "[\\(\\)]",
-                      "name": "punctuation.definition.function.interpolation.umbral"
-                    }
-                  ]
-                }
-              }
+              "match": "&[a-zA-Z_][a-zA-Z0-9_]*((\\.[a-zA-Z_][a-zA-Z0-9_]*)|(\\([^\\)]*\\))|(\\[[^\\]]*\\]))*",
+              "name": "constant.character.escape.umbral"
             }
           ]
         }
@@ -96,6 +68,14 @@
         {
           "match": "\\b(i|ie|e|wh|r|th|n|out|equip|origin|as)\\b",
           "name": "keyword.control.umbral"
+        },
+        {
+          "match": "\\b(sw|ca|def):",
+          "name": "keyword.control.switch.umbral"
+        },
+        {
+          "match": "\\b(ext|imp|in):",
+          "name": "keyword.other.oop.umbral"
         },
         {
           "match": "\\b(v|c|f|fe|cs|pr|pu):",
