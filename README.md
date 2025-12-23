@@ -14,9 +14,9 @@ Extensión oficial de Visual Studio Code para el lenguaje de programación **Umb
   - `'texto literal'` - String sin interpolación
   - `"texto con &variable"` - String con interpolación
   - `'''texto multilínea con &interpolacion'''`
-- **Palabras Clave**: `i`, `e`, `wh`, `r`, `th`, `n`, `out`, `equip`, `origin`, `as`
+- **Palabras Clave**: `i`, `e`, `wh`, `r`, `th`, `n`, `out`, `equip`, `origin`, `as`, `tr`, `ct`, `tw`, `fy`
 - **Declaradores**: `v:`, `c:`, `f:`, `cs:`, `pr:`, `pu:`
-- **Tipos de Datos**: `Int`, `Str`, `Flo`, `Bool`, `Void`, `[]`, `[][]`
+- **Tipos de Datos**: `Int`, `Str`, `Flo`, `Bool`, `Void`, `Error`, `[]`, `[][]`
 - **Operadores**: `->`, `+`, `-`, `*`, `/`, `%`, `==`, `!=`, `<=`, `>=`, `<`, `>`, `&&`, `||`, `!`, `=`
 - **Operador Spread**: `&array` para expandir arrays
 - **Números y Booleanos**: `42`, `3.14`, `true`, `false`
@@ -69,6 +69,15 @@ wh: (contador < 10) {
     contador = contador + 1;
 }
 
+!! Manejo de Errores
+tr: {
+    tw: "Ocurrió un error inesperado";
+} ct: (v: e) {
+    tprint("Capturado: &e");
+} fy: {
+    tprint("Limpiando recursos...");
+}
+
 !! Clases
 cs: Persona {
     pr: nombre->Str;
@@ -105,6 +114,7 @@ v: literal = 'Sin interpolación &nombre';
 - **Clases**: `cs:` con propiedades (`pr:`) y métodos públicos (`pu:`)
 - **Condicionales**: `i:` (if), `e:` (else)
 - **Bucles**: `wh:` (while)
+- **Manejo de Errores**: `tr:` (try), `ct:` (catch), `tw:` (throw), `fy:` (finally)
 - **Arrays**: `{1, 2, 3}` con tipos `[]Int`, `[][]Int`
 - **Interpolación**: `&variable` en strings y triple comillas
 - **Operador Spread**: `&array` para expandir arrays

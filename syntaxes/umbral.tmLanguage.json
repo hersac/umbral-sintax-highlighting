@@ -70,15 +70,15 @@
           "name": "keyword.control.umbral"
         },
         {
-          "match": "\\b(sw|ca|def):",
-          "name": "keyword.control.switch.umbral"
+          "match": "\\b(sw|ca|def|tr|ct|tw|fy):",
+          "name": "keyword.control.conditional.umbral"
         },
         {
           "match": "\\b(ext|imp|in):",
           "name": "keyword.other.oop.umbral"
         },
         {
-          "match": "\\b(v|c|f|fe|cs|pr|pu):",
+          "match": "\\b(v|c|f|fo|fe|cs|pr|pu):",
           "name": "keyword.declaration.umbral"
         }
       ]
@@ -109,7 +109,7 @@
     "tipos": {
       "patterns": [
         {
-          "match": "\\b(Int|Str|Flo|Bool|Void)\\b",
+          "match": "\\b(Int|Str|Flo|Bool|Void|Error)\\b",
           "name": "support.type.primitive.umbral"
         },
         {
@@ -176,6 +176,10 @@
         {
           "match": "\\b(tprint)\\b",
           "name": "support.function.builtin.umbral"
+        },
+        {
+          "match": "\\.length\\b",
+          "name": "support.variable.property.umbral"
         }
       ]
     }
