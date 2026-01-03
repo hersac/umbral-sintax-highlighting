@@ -66,6 +66,10 @@
     "palabrasClave": {
       "patterns": [
         {
+          "match": "\\b(awa)\\b",
+          "name": "keyword.control.flow.await.umbral"
+        },
+        {
           "match": "\\b(i|ie|e|wh|r|th|n|out|equip|origin|as)\\b",
           "name": "keyword.control.umbral"
         },
@@ -86,6 +90,10 @@
 
     "modificadores": {
       "patterns": [
+        {
+          "match": "\\b(asy)\\b",
+          "name": "storage.modifier.async.umbral"
+        },
         {
           "match": "\\b(pu|pr)\\b",
           "name": "storage.modifier.umbral"

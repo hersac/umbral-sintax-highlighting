@@ -14,7 +14,7 @@ Extensión oficial de Visual Studio Code para el lenguaje de programación **Umb
   - `'texto literal'` - String sin interpolación
   - `"texto con &variable"` - String con interpolación
   - `'''texto multilínea con &interpolacion'''`
-- **Palabras Clave**: `i`, `e`, `wh`, `r`, `th`, `n`, `out`, `equip`, `origin`, `as`, `tr`, `ct`, `tw`, `fy`
+- **Palabras Clave**: `i`, `e`, `wh`, `r`, `th`, `n`, `out`, `equip`, `origin`, `as`, `tr`, `ct`, `tw`, `fy`, `asy`, `awa`
 - **Declaradores**: `v:`, `c:`, `f:`, `cs:`, `pr:`, `pu:`
 - **Tipos de Datos**: `Int`, `Str`, `Flo`, `Bool`, `Void`, `Error`, `[]`, `[][]`
 - **Operadores**: `->`, `+`, `-`, `*`, `/`, `%`, `==`, `!=`, `<=`, `>=`, `<`, `>`, `&&`, `||`, `!`, `=`
@@ -78,6 +78,12 @@ tr: {
     tprint("Limpiando recursos...");
 }
 
+!! Asincronía
+asy f: cargarDatos()->Str {
+    awa esperar(1000);
+    r: "Datos listos";
+}
+
 !! Clases
 cs: Persona {
     pr: nombre->Str;
@@ -115,6 +121,7 @@ v: literal = 'Sin interpolación &nombre';
 - **Condicionales**: `i:` (if), `e:` (else)
 - **Bucles**: `wh:` (while)
 - **Manejo de Errores**: `tr:` (try), `ct:` (catch), `tw:` (throw), `fy:` (finally)
+- **Asincronía**: `asy` (async), `awa` (await)
 - **Arrays**: `{1, 2, 3}` con tipos `[]Int`, `[][]Int`
 - **Interpolación**: `&variable` en strings y triple comillas
 - **Operador Spread**: `&array` para expandir arrays

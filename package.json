@@ -2,7 +2,7 @@
   "name": "um",
   "displayName": "umbral",
   "description": "Umbral Language Support for VS Code",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "publisher": "umbral",
   "icon": "img/umbral-pet-sin-fondo.png",
   "engines": {
